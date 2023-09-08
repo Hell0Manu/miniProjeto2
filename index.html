@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Animais</h1>
+        <div class="form-container">
+            <form id="animalForm">
+                <div class="input-container">
+                    <label for="nomeDono">Nome do Dono</label>
+                    <input type="text" id="nomeDono" required>
+                </div>
+                <div class="input-container">
+                    <label for="nomePet">Nome do Pet</label>
+                    <input type="text" id="nomePet" required>
+                </div>
+                <div class="input-container">
+                    <label for="idadePet">Idade do Pet</label>
+                    <input type="number" id="idadePet" required>
+                </div>
+                <div class="input-container">
+                    <label for="racaPet">Raça do Pet</label>
+                    <input type="text" id="racaPet" required>
+                </div>
+                <div class="input-container">
+                    <label for="generoPet">Gênero do Pet</label>
+                    <select id="generoPet" required>
+                        <option value="Macho">Selecionar</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Fêmea">Fêmea</option>
+                    </select>
+                </div>
+                <div class="form-action">
+                    <button class="cadastrarbtn" cltype="submit">Cadastrar</button>
+                    <div class="atualizarBtn">
+                        <button class="_cancelarBtn" type="submit">Atualizar</button>
+                        <button type="reset">Cancelar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="list-container">
+            <table id="animalList">
+                    <tr>
+                        <th>Nome do Dono</th>
+                        <th>Nome do Pet</th>
+                        <th>Idade</th>
+                        <th>Raça</th>
+                        <th>Gênero</th>
+                        <th>Ações</th>
+                    </tr>
+                    </thead>
+                    
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
